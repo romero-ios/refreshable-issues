@@ -3,23 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9EC1D3752B13B04C005A7728 /* RefreshableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1D3742B13B04C005A7728 /* RefreshableApp.swift */; };
-		9EC1D3772B13B04C005A7728 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1D3762B13B04C005A7728 /* ContentView.swift */; };
 		9EC1D3792B13B04D005A7728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC1D3782B13B04D005A7728 /* Assets.xcassets */; };
 		9EC1D37D2B13B04D005A7728 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC1D37C2B13B04D005A7728 /* Preview Assets.xcassets */; };
+		9EC1D3852B13B187005A7728 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC1D3842B13B187005A7728 /* ComposableArchitecture */; };
+		9EC1D3872B13B195005A7728 /* Vanilla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1D3862B13B195005A7728 /* Vanilla.swift */; };
+		9EC1D3892B13B296005A7728 /* TCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1D3882B13B296005A7728 /* TCA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9EC1D3712B13B04C005A7728 /* Refreshable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refreshable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC1D3742B13B04C005A7728 /* RefreshableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableApp.swift; sourceTree = "<group>"; };
-		9EC1D3762B13B04C005A7728 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EC1D3782B13B04D005A7728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EC1D37A2B13B04D005A7728 /* Refreshable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refreshable.entitlements; sourceTree = "<group>"; };
 		9EC1D37C2B13B04D005A7728 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9EC1D3862B13B195005A7728 /* Vanilla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vanilla.swift; sourceTree = "<group>"; };
+		9EC1D3882B13B296005A7728 /* TCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC1D3852B13B187005A7728 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				9EC1D3742B13B04C005A7728 /* RefreshableApp.swift */,
-				9EC1D3762B13B04C005A7728 /* ContentView.swift */,
+				9EC1D3862B13B195005A7728 /* Vanilla.swift */,
+				9EC1D3882B13B296005A7728 /* TCA.swift */,
 				9EC1D3782B13B04D005A7728 /* Assets.xcassets */,
 				9EC1D37A2B13B04D005A7728 /* Refreshable.entitlements */,
 				9EC1D37B2B13B04D005A7728 /* Preview Content */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = Refreshable;
+			packageProductDependencies = (
+				9EC1D3842B13B187005A7728 /* ComposableArchitecture */,
+			);
 			productName = Refreshable;
 			productReference = 9EC1D3712B13B04C005A7728 /* Refreshable.app */;
 			productType = "com.apple.product-type.application";
@@ -105,7 +113,7 @@
 				};
 			};
 			buildConfigurationList = 9EC1D36C2B13B04C005A7728 /* Build configuration list for PBXProject "Refreshable" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 9EC1D3682B13B04C005A7728;
+			packageReferences = (
+				9EC1D3832B13B187005A7728 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 9EC1D3722B13B04C005A7728 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EC1D3772B13B04C005A7728 /* ContentView.swift in Sources */,
 				9EC1D3752B13B04C005A7728 /* RefreshableApp.swift in Sources */,
+				9EC1D3892B13B296005A7728 /* TCA.swift in Sources */,
+				9EC1D3872B13B195005A7728 /* Vanilla.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +282,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Refreshable/Preview Content\"";
-				DEVELOPMENT_TEAM = QU229P9S4K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -284,18 +296,19 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.usetandem.Refreshable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foobar.Refreshable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Refreshable/Preview Content\"";
-				DEVELOPMENT_TEAM = QU229P9S4K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -322,18 +335,19 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.usetandem.Refreshable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foobar.Refreshable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -359,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9EC1D3832B13B187005A7728 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EC1D3842B13B187005A7728 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EC1D3832B13B187005A7728 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9EC1D3692B13B04C005A7728 /* Project object */;
 }
